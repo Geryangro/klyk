@@ -95,17 +95,111 @@ img.g-img + div {
     u ~ div .email-container {
         min-width: 320px !important;
     }
+
+    .title-header {
+        font-size: 21px;
+    }
+
+    .subtitle-header {
+        font-size: 24px;
+    }
+
+    .subtitle-header-big {
+        font-size: 28px;
+    }
+
+    .imageBackground {
+        background-image: url('https://res.cloudinary.com/gerycompany/image/upload/v1614746539/klyk_banner_convert_rqjjeg.png');
+        height: 439px;
+        min-height: 468px;
+        background-repeat: no-repeat;
+        background-size:contain;
+        background-position:center;
+        padding: 20px 20px 0px;
+    }
 }
 /* iPhone 6, 6S, 7, 8, and X */
 @media only screen and (min-device-width: 375px) and (max-device-width: 413px) {
     u ~ div .email-container {
         min-width: 375px !important;
     }
+
+    .title-header {
+        font-size: 28px; 
+    }
+
+    .subtitle-header {
+        font-size: 29px;
+    }
+
+    .subtitle-header-big {
+        font-size: 37px;
+    }
+
+    .imageBackground {
+        background-image: url(https://res.cloudinary.com/gerycompany/image/upload/v1614746539/klyk_banner_convert_rqjjeg.png);
+        height: 522px;
+        min-height: 450px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        padding: 20px 20px 0px;
+    }
 }
 /* iPhone 6+, 7+, and 8+ */
 @media only screen and (min-device-width: 414px) {
     u ~ div .email-container {
         min-width: 414px !important;
+    }
+
+    .title-header {
+        font-size: 28px; 
+    }
+
+    .subtitle-header {
+        font-size: 29px;
+    }
+
+    .subtitle-header-big {
+        font-size: 37px;
+    }
+
+    .imageBackground {
+        background-image: url('https://res.cloudinary.com/gerycompany/image/upload/v1614746539/klyk_banner_convert_rqjjeg.png');
+        height: 590px;
+        min-height: 500px;
+        background-repeat: no-repeat;
+        background-size:contain;
+        background-position:center;
+        padding: 40px 20px 0px;
+    }
+}
+
+@media only screen and (min-device-width: 600px) {
+    u ~ div .email-container {
+        min-width: 414px !important;
+    }
+
+    .title-header {
+        font-size: 45px; 
+    }
+
+    .subtitle-header {
+        font-size: 47px;
+    }
+
+    .subtitle-header-big {
+        font-size: 55px;
+    }
+
+    .imageBackground {
+        background-image: url('https://res.cloudinary.com/gerycompany/image/upload/v1614746539/klyk_banner_convert_rqjjeg.png');
+        height: 773px;
+        min-height: 500px;
+        background-repeat: no-repeat;
+        background-size:contain;
+        background-position:center;
+        padding: 50px 30px 0px;
     }
 }
 
@@ -347,16 +441,10 @@ table{
           	<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
           		<tr>
           			<td class="logo" style="text-align: left; ">
-                        <div style="background-image: url('https://res.cloudinary.com/gerycompany/image/upload/v1614746539/klyk_banner_convert_rqjjeg.png');
-                        height: 773px;
-                        background-repeat: no-repeat;
-                        background-size:contain;
-                        background-position:center;
-                        padding: 50px 30px 0px;
-                        ">
-                            <h1 style="font-size: 45px; font-weight: 600; line-height: 1.4;">You’re Invited to</h1>
-                            <h1 style="font-size: 47px; font-weight: 800; line-height: 1.4;">YouTube Demystified:</h1>
-                            <h1 style="font-size: 55px; font-weight: 900; line-height: 1.4;">HOW TO SUCCEED</h1>
+                        <div class="imageBackground">
+                            <h1 class="title-header" style="font-weight: 600; line-height: 1.4;">You’re Invited to</h1>
+                            <h1 class="subtitle-header" style="font-weight: 800; line-height: 1.4;">YouTube Demystified:</h1>
+                            <h1 class="subtitle-header-big" style="font-weight: 900; line-height: 1.4;">HOW TO SUCCEED</h1>
                         </div>
 			          </td>
           		</tr>
@@ -465,7 +553,7 @@ table{
                 <div style="text-align: center">
                     <span style="color: #000">Copyright © 2021. Klyk. All rights reserved.</span>
                 </div>
-                <div style="text-align: center; margin-top: 50px;">
+                <div style="text-align: center; margin-top: 50px; padding: 0px 20px;">
                     <p style="color: #A6A6A6">
                         Klyk
                         [Address]
