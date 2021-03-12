@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width"> <!-- Forcing initial-scale shouldn't be necessary -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Use the latest (edge) version of IE rendering engine -->
     <meta name="x-apple-disable-message-reformatting">  <!-- Disable auto-scale in iOS 10 Mail entirely -->
-    <title></title> <!-- The title tag shows in email notifications, like Android 4.4. -->
+    <title>You’re Invited to YouTube Demystified: HOW TO SUCCEED</title> <!-- The title tag shows in email notifications, like Android 4.4. -->
 
     <link href="https://fonts.googleapis.com/css?family=Work+Sans:200,300,400,500,600,700,800,900" rel="stylesheet">
 
@@ -439,14 +439,22 @@
                     <td style="padding-bottom: 30px; background-color: #ffffff; color: #191D25;">
                         <div class="heading-section" style="text-align: left; padding: 30px 40px;">
                           <p style="font-size: 20px; font-weight: 500;">
-                            Hi {First Name},
+                            Hi {{ first_name | fallback:"You" }},
                             <br />
+                            Have you ever wondered why your
                             <br />
-                            Have you ever wondered why your YouTube channel has never taken off?
+                            YouTube channel has never taken off?
+                            <br />
                             Now is the time to find out why.
                             <br />
                             <br />
-                            We’re inviting you to join Changer’s<br /> limited-time-only online event “YouTube <br />Demystified: How to Succeed” on Klyk this <strong>{17th of March, 2021}</strong> at <strong>{12PM AEST}</strong>.
+                            We’re inviting you to join Changer’s
+                            <br />
+                            limited-time-only online event
+                            <br />
+                            <strong>“YouTube Demystified: How to Succeed”</strong>
+                            <br />
+                            only on Klyk this <strong>18th of March, 2021</strong> at <strong>12PM AEST</strong>.
                         </p>
                         </div>
                         <div style="text-align: center;">
@@ -506,12 +514,12 @@
                 <tr>
                     <td class="bg_white" style="padding-bottom: 30px;">
                         <div style="text-align: center; margin: 40px 0px">
-                            <a href="https://www.facebook.com/" style="font-size: 20px; background-color: #6E4AEA; border-radius: 30px; color: #ffffff; padding: 10px 30px; width: 200px; margin: auto; display: block;">
+                            <a href="https://ourklyk.com/" style="font-size: 20px; background-color: #6E4AEA; border-radius: 30px; color: #ffffff; padding: 10px 30px; width: 200px; margin: auto; display: block;">
                                 Let’s start Klyk-ing
                             </a>
                         </div>
                         <div style="text-align: center; margin-bottom: 60px">
-                            <a href="https://www.facebook.com/" style="font-size: 20px; background-color: #ffffff; border-radius: 30px; color: #6E4AEA; padding: 10px 30px; width: 150px; margin: auto; display: block; border: 3px solid #6E4AEA;">
+                            <a href="https://intercom.help/ourklyk/en/" style="font-size: 20px; background-color: #ffffff; border-radius: 30px; color: #6E4AEA; padding: 10px 30px; width: 150px; margin: auto; display: block; border: 3px solid #6E4AEA;">
                                 Got questions?
                             </a>
                         </div>
@@ -538,20 +546,15 @@
                         </div>
                         <div style="text-align: center; margin-top: 50px; padding: 0px 20px;">
                             <p style="color: #A6A6A6">
-                                Klyk
-                                [Address]
-                                <br />
-                            </p>
-                            <p style="color: #A6A6A6">
                                 You are receiving this email because you signed up for Klyk.
                                 <br />
                             </p>
                             <p style="color: #A6A6A6">
                                 Want to stop receiving these emails?
                                 <br />
-                                <a href="http://instagram.com/" style="color: #A6A6A6">
+                                <a href="{{unsubscribe_url}}" style="color: #A6A6A6">
                                 Unsubscribe
-                                </a> | <a href="http://instagram.com/" style="color: #A6A6A6"> Support </a>
+                                </a> | <a href="https://intercom.help/ourklyk/en/" style="color: #A6A6A6"> Support </a>
                             </p>
                         </div>
                     </td>
