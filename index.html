@@ -11,6 +11,10 @@
 
     <!-- CSS Reset : BEGIN -->
     <style>
+        :root {
+            color-scheme: light dark;
+            supported-color-schemes: light dark;
+        }
         html,
         body {
             margin: 0 auto !important;
@@ -19,6 +23,7 @@
             width: 100% !important;
             background: #f1f1f1;
         }
+        
 
         /* What it does: Stops email clients resizing small text. */
         * {
@@ -86,6 +91,9 @@
             display: none !important;
         }
 
+        .black-text {
+            color: #000000 !important;
+        }
         /* What it does: Removes right gutter in Gmail iOS app: https://github.com/TedGoas/Cerberus/issues/89  */
         /* Create one of these media queries for each additional viewport size you'd like to fix */
 
@@ -203,6 +211,18 @@
         }
     </style>
     <!-- CSS Reset : END -->
+    <style type="text/css">
+        :root {
+            Color-scheme: light dark;
+            supported-color-schemes:light dark;
+        }
+
+        @media (prefers-color-scheme: dark ) {
+            .black-text {
+                color: #000000 !important;
+            }
+        }
+    </style>
     <!-- Progressive Enhancements : BEGIN -->
     <style>
 	    .primary{
@@ -364,7 +384,6 @@
             color: rgba(255,255,255,.8);
         }
         .heading-section-white h2{
-            font-family: 
             line-height: 1;
             padding-bottom: 0;
         }
@@ -427,30 +446,26 @@
           <td valign="top" class="bg_white">
           	<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
           		<tr>
-          			<td class="logo" style="text-align: left; ">
+          			<td class="logo" style="text-align: left; background: rgb(255,255,255);
+                      background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%); ">
                         <img src="https://res.cloudinary.com/gerycompany/image/upload/v1615529633/fixImagelKlykconvert_epbv8d.png" style="width: 100%;" />
                     </td>
           		</tr>
                   <tr>
-                    <td style="padding-bottom: 30px; background-color: #ffffff; color: #191D25;">
-                        <div class="heading-section" style="text-align: left; padding: 30px 40px;">
-                          <p style="font-size: 20px; font-weight: 500;">
+                    <td style="padding-bottom: 30px; background: rgb(255,255,255);
+                    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%); color: #191D25;">
+                        <div style="text-align: left; padding: 30px 40px;">
+                          <p style="font-size: 20px; font-weight: 500; color: #606060;">
                             Hi {{ first_name | fallback:"You" }},
                             <br />
-                            Have you ever wondered why your
-                            <br />
-                            YouTube channel has never taken off?
-                            <br />
-                            Now is the time to find out why.
+                            Are you looking to give your YouTube channel the push it needs to really take off?
                             <br />
                             <br />
-                            We’re inviting you to join Changer’s
-                            <br />
-                            limited-time-only online event
+                            Join Changer's 
                             <br />
                             <strong>“YouTube Demystified: How to Succeed”</strong>
                             <br />
-                            only on Klyk this <strong>18th of March, 2021</strong> at <strong>12PM AEST</strong>.
+                            only on Klyk - <strong>25th March 2021</strong> at <strong>12pm AEST</stong>.
                         </p>
                         </div>
                         <div style="text-align: center;">
@@ -474,9 +489,11 @@
                                 <h2 style="color: #ffffff; font-weight: 600;
                                 font-style: normal;">About the event</h2>
                                 <p style="color: #ffffff; font-size: 20px;">
-                                    Join content creator experts Ant & Fred as they divulge the best-kept secrets to success on the world’s biggest online video platform. Whether you’re a video content creator or aspire to be a famous YouTuber in the future, this online event will give you access to exclusive knowledge
-                                    on how to successfully build your
-                                    channel from the ground up.
+                                    Join the founders of Changer and content creator experts, Ant & Fred as they divulge their secrets to success on the world’s biggest online video platform.
+                                    <br />
+                                    <br />
+                                    Whether you’re a video content creator, or aspire to be a YouTube Icon, this online event will give you access to exclusive insight from the professionals
+                                    on how to successfully build your channel from the ground up. 
                                 </p>
                             </div>
                             <div style="text-align: center;">
@@ -491,12 +508,13 @@
                                 <h2 style="color: #ffffff; font-weight: 600;
                                 font-style: normal;">Wait, There’s More!</h2>
                                 <p style="color: #ffffff; font-size: 20px;">
-                                    Have fun with our online creator community and share the best tips and tricks with each other. 
-                                    At the end of the session, one lucky participant will win free one-year access to TubeBuddy Legend worth $480. That’s something
-                                    you would like to have.
+                                    Instead of Wait There's More I think we use something like - "Start building your community immediately and learn with other influencers.  You'll also have the chance to win a one year free subscription to TubeBuddy Legend worth $480."
                                     <br />
                                     <br />
-                                    Don’t miss this one-of-a-kind opportunity to pick the brains of these top video experts.
+                                    Youtube Demystified: How to Succeed will be brought to you by Klyk on Thursday 25th March 2021 at 12pm AEST on ourklyk.com. 
+                                    <br />
+                                    <br />
+                                    Don’t miss this opportunity to interact live with these experts in the field.
                                 </p>
                             </div>
                             <div style="text-align: center;">
@@ -508,7 +526,8 @@
                     </td>
                 </tr>
                 <tr>
-                    <td class="bg_white" style="padding-bottom: 30px;">
+                    <td class="bg_white" style="padding-bottom: 30px; background: rgb(255,255,255);
+                    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%);">
                         <div style="text-align: center; margin: 40px 0px">
                             <a href="https://ourklyk.com/" style="font-size: 20px; background-color: #6E4AEA; border-radius: 30px; color: #ffffff; padding: 10px 30px; width: 200px; margin: auto; display: block;">
                                 Let’s start Klyk-ing
@@ -538,7 +557,7 @@
                             </a>
                         </div>
                         <div style="text-align: center">
-                            <span style="color: #000">Copyright © 2021. Klyk. All rights reserved.</span>
+                            <span class="black-text" style="color: #606060;">Copyright © 2021. Klyk. All rights reserved.</span>
                         </div>
                         <div style="text-align: center; margin-top: 50px; padding: 0px 20px;">
                             <p style="color: #A6A6A6">
